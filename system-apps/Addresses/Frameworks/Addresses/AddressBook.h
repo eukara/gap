@@ -68,6 +68,7 @@
 #define kABNicknameProperty           ADNicknameProperty
 #define kABMaidenNameProperty         ADMaidenNameProperty
 #define kABBirthdayProperty           ADBirthdayProperty
+#define kABDeathdayProperty	      ADDeathdayProperty
 #define kABOrganizationProperty       ADOrganizationProperty
 #define kABJobTitleProperty           ADJobTitleProperty
 #define kABHomePageProperty           ADHomePageProperty

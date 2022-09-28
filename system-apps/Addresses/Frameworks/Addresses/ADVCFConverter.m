@@ -532,6 +532,20 @@ static NSArray *knownItems;
       else
 	NSLog(@"Can't convert %@ to date\n", [v objectAtIndex: 0]);
     }
+  else if([key isEqualToString: @"dday"])
+    {
+      NSCalendarDate *d;
+
+      d = [NSCalendarDate dateWithString: [v objectAtIndex: 0]
+			  calendarFormat: @"%Y-%d-%m"];
+      if(!d)
+	d = [NSCalendarDate dateWithString: [v objectAtIndex: 0]
+			    calendarFormat: @"%Y%d%m"];
+      if(d) 
+	[p setValue: d forProperty: ADDeathdayProperty];
+      else
+	NSLog(@"Can't convert %@ to date\n", [v objectAtIndex: 0]);
+    }
   
   else if([key isEqualToString: @"note"])
     [p setValue: [v objectAtIndex: 0] forProperty: ADNoteProperty];
@@ -812,6 +826,9 @@ static NSArray *knownItems;
     }
   else if([prop isEqualToString: ADBirthdayProperty])
     [self appendStringWithHeader: @"BDAY"
+	  value: [val descriptionWithCalendarFormat: @"%Y-%d-%m"]];
+  else if([prop isEqualToString: ADDeathdayProperty])
+    [self appendStringWithHeader: @"DDAY"
 	  value: [val descriptionWithCalendarFormat: @"%Y-%d-%m"]];
   else
     NSLog(@"Warning: Unhandled property '%@' in conversion to vcard\n",

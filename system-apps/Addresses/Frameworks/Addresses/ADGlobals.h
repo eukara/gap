@@ -36,6 +36,7 @@ extern NSString * const ADMaidenNameProperty;         // string UNSUPP
 extern NSString * const ADFormattedNameProperty;
 
 extern NSString * const ADBirthdayProperty;           // date
+extern NSString * const ADDeathdayProperty;
 extern NSString * const ADOrganizationProperty;       // string
 extern NSString * const ADJobTitleProperty;           // string
 extern NSString * const ADHomePageProperty;           // string

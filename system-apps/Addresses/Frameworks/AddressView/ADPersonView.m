@@ -209,6 +209,7 @@ static NSString *__defaultCountryCode = nil;
   NSString *note;
 
   properties = [NSArray arrayWithObjects: ADBirthdayProperty,
+	     		ADDeathdayProperty,
 			ADHomePageProperty,
 			ADPhoneProperty,
 			ADEmailProperty,

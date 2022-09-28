@@ -6,6 +6,7 @@
 "FirstNamePhonetic" = "Vorname (Phonetisch)";
 "LastNamePhonetic" = "Nachname (Phonetisch)";
 "BirthDate" = "Geburtsdatum";
+"DeathDate" = "Todestag";
 "Organization" = "Organisation";
 "JobTitle" = "Beruf";
 "HomePage" = "Homepage";

@@ -26,6 +26,7 @@ NSString* const ADLastNamePhoneticProperty = @"LastNamePhonetic";
 NSString* const ADFormattedNameProperty = @"FormattedName";
 
 NSString* const ADBirthdayProperty = @"BirthDate";
+NSString* const ADDeathdayProperty = @"DeathDate";
 NSString* const ADOrganizationProperty = @"Organization";
 NSString* const ADJobTitleProperty = @"JobTitle"; 
 NSString* const ADHomePageProperty = @"HomePage";
@@ -141,6 +142,7 @@ NSString* ADLocalizedPropertyOrLabel(NSString* propertyOrLabel)
       ADMaidenNameProperty, @"ADMaidenNameProperty",
       
       ADBirthdayProperty, @"ADBirthdayProperty",
+      ADDeathdayProperty, @"ADDeathdayProperty",
       ADOrganizationProperty, @"ADOrganizationProperty",
       ADJobTitleProperty, @"ADJobTitleProperty",
       ADHomePageProperty, @"ADHomePageProperty",
