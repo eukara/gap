@@ -29,7 +29,7 @@ Zipper_RESOURCE_FILES = \
 	Resources/MainMenu.gorm \
 	Resources/Preferences.gorm \
 	Resources/ZipperDocument.gorm \
-	Resources/FileIcon.tiff \
+	Resources/FileIcon_*.tiff \
 	Resources/no_order.tiff \
 	Resources/sort_ascending.tiff \
 	Resources/sort_descending.tiff \

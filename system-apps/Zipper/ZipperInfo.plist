@@ -14,7 +14,7 @@
 			NSName = "Ace";
 			NSHumanReadableName = "Ace Archive";
 			NSUnixExtensions = ( "ace", "ACE" );
-			NSIcon = "FileIcon.tiff";
+			NSIcon = "FileIcon_ace.tiff";
 			NSDocumentClass = "ZipperDocument";
 			NSRole = "Editor";
 		},
@@ -22,7 +22,7 @@
 			NSName = "Arj";
 			NSHumanReadableName = "Arj Archive";
 			NSUnixExtensions = ( "arj", "ARJ" );
-			NSIcon = "FileIcon.tiff";
+			NSIcon = "FileIcon_arj.tiff";
 			NSDocumentClass = "ZipperDocument";
 			NSRole = "Editor";
 		},
@@ -30,7 +30,7 @@
 			NSName = "Zoo";
 			NSHumanReadableName = "Zoo Archive";
 			NSUnixExtensions = ( "zoo", "ZOO" );
-			NSIcon = "FileIcon.tiff";
+			NSIcon = "FileIcon_zoo.tiff";
 			NSDocumentClass = "ZipperDocument";
 			NSRole = "Editor";
 		},
@@ -38,7 +38,7 @@
 			NSName = "Zip";
 			NSHumanReadableName = "Zip Archive";
 			NSUnixExtensions = ( "zip", "ZIP", "jar", "JAR", "ear", "EAR" );
-			NSIcon = "FileIcon.tiff";
+			NSIcon = "FileIcon_zip.tiff";
 			NSDocumentClass = "ZipperDocument";
 			NSRole = "Editor";
 		},
@@ -46,7 +46,7 @@
 			NSName = "7Zip";
 			NSHumanReadableName = "7Zip Archive";
 			NSUnixExtensions = ( "7z", "7Z", "7za", "7ZA" );
-			NSIcon = "FileIcon.tiff";
+			NSIcon = "FileIcon_7z.tiff";
 			NSDocumentClass = "ZipperDocument";
 			NSRole = "Editor";
 		},
@@ -54,7 +54,7 @@
 			NSName = "Tar";
 			NSHumanReadableName = "Tar Archive";
 			NSUnixExtensions = ( "tar", "TAR" );
-			NSIcon = "FileIcon.tiff";
+			NSIcon = "FileIcon_tar.tiff";
 			NSDocumentClass = "ZipperDocument";
 			NSRole = "Editor";
 		},
@@ -62,7 +62,7 @@
 			NSName = "TarGz";
 			NSHumanReadableName = "Compressed Tar Archive";
 			NSUnixExtensions = ( "gz", "GZ", "tgz", "TGZ" );
-			NSIcon = "FileIcon.tiff";
+			NSIcon = "FileIcon_gzip.tiff";
 			NSDocumentClass = "ZipperDocument";
 			NSRole = "Editor";
 		},
@@ -70,15 +70,7 @@
 			NSName = "TarBz2";
 			NSHumanReadableName = "Compressed Tar Archive";
 			NSUnixExtensions = ( "bz2", "BZ2", "tbz2", "TBZ2" );
-			NSIcon = "FileIcon.tiff";
-			NSDocumentClass = "ZipperDocument";
-			NSRole = "Editor";
-		},
-		{
-			NSName = "TarXz";
-			NSHumanReadableName = "Compressed Tar Archive";
-			NSUnixExtensions = ( "TXZ", "txz", "XZ", "xz" );
-			NSIcon = "FileIcon.tiff";
+			NSIcon = "FileIcon_bz2.tiff";
 			NSDocumentClass = "ZipperDocument";
 			NSRole = "Editor";
 		},
@@ -86,7 +78,7 @@
 			NSName = "Rar";
 			NSHumanReadableName = "Rar Archive";
 			NSUnixExtensions = ( "rar", "RAR" );
-			NSIcon = "FileIcon.tiff";
+			NSIcon = "FileIcon_rar.tiff";
 			NSDocumentClass = "ZipperDocument";
 			NSRole = "Editor";
 		},
@@ -94,7 +86,23 @@
 			NSName = "Lha";
 			NSHumanReadableName = "Lha Archive";
 			NSUnixExtensions = ( "lha", "LHA" );
-			NSIcon = "FileIcon.tiff";
+			NSIcon = "FileIcon_lha.tiff";
+			NSDocumentClass = "ZipperDocument";
+			NSRole = "Editor";
+		},
+		{
+			NSName = "Txz";
+			NSHumanReadableName = "Txz Archive";
+			NSUnixExtensions = ( "txz", "TXZ" );
+			NSIcon = "FileIcon_txz.tiff";
+			NSDocumentClass = "ZipperDocument";
+			NSRole = "Editor";
+		},
+		{
+			NSName = "Xz";
+			NSHumanReadableName = "Xz Archive";
+			NSUnixExtensions = ( "xz", "XZ" );
+			NSIcon = "FileIcon_xz.tiff";
 			NSDocumentClass = "ZipperDocument";
 			NSRole = "Editor";
 		},
@@ -102,7 +110,7 @@
 			NSName = "Lzx";
 			NSHumanReadableName = "Lzx Archive";
 			NSUnixExtensions = ( "lzx", "LZX" );
-			NSIcon = "FileIcon.tiff";
+			NSIcon = "FileIcon_lzx.tiff";
 			NSDocumentClass = "ZipperDocument";
 			NSRole = "Editor";
 		}
