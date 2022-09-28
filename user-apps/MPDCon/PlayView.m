@@ -122,18 +122,10 @@
   else 
     {
       NSImage *gnustepImage;
-      CGFloat bWidth, bHeight, iWidth, iHeight;
       
-      bWidth = myBounds.size.width;
-      bHeight = myBounds.size.height;
-      
-      gnustepImage = [NSImage imageNamed: @"GNUstep.tiff"];
-      
-      iWidth = [gnustepImage size].width;
-      iHeight = [gnustepImage size].height;
-
-      [gnustepImage compositeToPoint: NSMakePoint((bWidth/2.0) - (bHeight/2.0), 3) 
-		            fromRect: NSMakeRect(0, 0, bHeight - 3, bHeight - 3)
+      gnustepImage = [NSImage imageNamed: @"banner.tiff"];
+      [gnustepImage compositeToPoint: NSMakePoint(1, 2) 
+		            fromRect: NSMakeRect(0, 0, 235, 72)
 		           operation: NSCompositeSourceOver];
   }
 }

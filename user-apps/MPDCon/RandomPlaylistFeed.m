@@ -154,7 +154,11 @@
                 NSEnumerator *playlistEnumerator;
                 PlaylistItem *plItem;
                 BOOL addThisTrack = YES;
+#ifdef __OpenBSD__
                 NSUInteger random = arc4random() % [allSongs count];
+#else
+                NSUInteger random = rand() % [allSongs count];
+#endif
                 trackFilename = [[[allSongs objectAtIndex: random] getPath] copy];
 
                 // now check if the new song is already in the playlist

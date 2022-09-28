@@ -34,12 +34,13 @@ Resources/LyricsInspector.gorm \
 Resources/SongInspector.gorm \
 Resources/PlaylistInspector.gorm \
 Resources/CollectionBrowser.gorm \
+Resources/banner.tiff \
 Resources/Play.tiff \
 Resources/Pause.tiff \
 Resources/Next.tiff \
 Resources/Prev.tiff \
 Resources/Stop.tiff \
-Resources/GNUstep.tiff \
+Resources/MPDCon.tiff \
 Resources/Repeat.tiff \
 Resources/Shuffle.tiff \
 Resources/Playlist.tiff \
