@@ -71,40 +71,42 @@
 //------------------------------------------------------------------------------
 - (int)expandFiles:(NSArray *)files withPathInfo:(BOOL)usePathInfo toPath:(NSString *)path
 {
-	FileInfo *fileInfo;
-	NSString *compressionArg;
-	NSMutableArray *args;
-	
-	compressionArg = [Preferences compressionArgumentForFile:[self path]];
-	NSParameterAssert(compressionArg != nil);
+  FileInfo *fileInfo;
+  NSString *compressionArg;
+  NSMutableArray *args;
+  
+  compressionArg = [Preferences compressionArgumentForFile:[self path]];
+  NSParameterAssert(compressionArg != nil);
 
-	args = [NSMutableArray array];
-	[args addObject:@"-x"];
+  args = [NSMutableArray array];
 
-	if (compressionArg != nil && [compressionArg length] > 0)
-	  {
-	    // compression method
-	    [args addObject:compressionArg];
-	  }
+  /* hack to deal with tar.xz better */
+  if ([[self path] hasSuffix:@".tar.xz"] == NO) {
+    if (compressionArg != nil && [compressionArg length] > 0)
+    {
+      // compression method
+      [args addObject:compressionArg];
+    }
+  }
 
-	// the archive
-	[args addObject:@"-f"];
-	[args addObject:[self path]];
+  // the archive
+  [args addObject:@"-xf"];
+  [args addObject:[self path]];
 
-	// destination dir
-	[args addObject:@"-C"];
-	[args addObject:path];
-	
-	if (files != nil)
-	{
-		NSEnumerator *cursor = [files objectEnumerator];
-		while ((fileInfo = [cursor nextObject]) != nil)
-		{
-			[args addObject:[fileInfo fullPath]];
-		}
-	}
-	
-	return [self runUnarchiverWithArguments:args];
+  // destination dir
+  [args addObject:@"-C"];
+  [args addObject:path];
+  
+  if (files != nil)
+  {
+    NSEnumerator *cursor = [files objectEnumerator];
+    while ((fileInfo = [cursor nextObject]) != nil)
+    {
+      [args addObject:[fileInfo fullPath]];
+    }
+  }
+  
+  return [self runUnarchiverWithArguments:args];
 }
 
 - (NSArray *)listContents

@@ -69,6 +69,7 @@ static NSMutableDictionary *_extensionMapping = nil;
 			@"-z", @"gz",
 			@"-z", @"tgz",
 			@"-j", @"bz2",
+			@"-t", @"xz",
 			nil] retain];
 	}
 	
