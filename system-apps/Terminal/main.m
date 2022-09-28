@@ -179,13 +179,13 @@
 	m=[[NSMenu alloc] init];
 	[m addItemWithTitle: _(@"Cut")
 		action: @selector(cut:)
-		keyEquivalent: @"x"];
+		keyEquivalent: @"X"];
 	[m addItemWithTitle: _(@"Copy")
 		action: @selector(copy:)
-		keyEquivalent: @"c"];
+		keyEquivalent: @"C"];
 	[m addItemWithTitle: _(@"Paste")
 		action: @selector(paste:)
-		keyEquivalent: @"v"];
+		keyEquivalent: @"V"];
 	[menu setSubmenu: m forItem: [menu addItemWithTitle: _(@"Edit")]];
 	[m release];
 
